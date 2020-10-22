@@ -508,7 +508,7 @@ get_setting "retroarch.menu_driver"
 if [ "$EE_DEVICE" == "OdroidGoAdvance" ]; then
 [ "${EES}" == "false" ] || [ "${EES}" == "none" ] || [ "${EES}" == "0" ] && EES="xmb"
 else
-[ "${EES}" == "false" ] || [ "${EES}" == "none" ] || [ "${EES}" == "0" ] && EES="ozone"
+[ "${EES}" == "false" ] || [ "${EES}" == "none" ] || [ "${EES}" == "0" ] && EES="xmb"
 fi
 
 sed -i "/menu_driver =/d" ${RACONF}
